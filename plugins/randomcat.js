@@ -8,7 +8,7 @@ const mask = image[Math.floor(Math.random()*image.length)]
 
 await message.send(
 
-await sticker('mask' , mask ),{quoted: message.data},'sticker')
+await sticker('Ayush' , Ayush ),{quoted: message.data},'sticker')
 
 });
 
