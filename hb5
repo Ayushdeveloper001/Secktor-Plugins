@@ -1,0 +1,15 @@
+const { tlnag,cmd,getBuffer,prefix,Config} = require('../lib')
+/**
+================================================
+*@text: Send text
+===============================================
+*//
+cmd({
+  pattern: 'text',
+  desc: 'Sends text',
+  category: 'gen',
+  use: '<does this>',
+}, async (Void,citel,text) => {
+await citel.reply("*Happy Birthday*") 
+});
+/**
