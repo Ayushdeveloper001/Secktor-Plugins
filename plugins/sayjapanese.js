@@ -1,7 +1,7 @@
 const { tlnag,cmd,getBuffer,prefix,Config} = require('../lib')
 
 cmd({
-            pattern: "sayajapanese",
+            pattern: "sayjapanese",
             desc: "text to speech.",
             category: "downloader",
             filename: __filename,
@@ -9,8 +9,8 @@ cmd({
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply('Please give me Sentence to change into audio.')
-            let texttts = text
-            const ttsurl = googleTTS.getAudioUrl(texttts, {
+            let textjapan = text
+            const ttsurl = googleTTS.getAudioUrl(textjapan, {
                 lang: "ja",
                 slow: false,
                 host: "https://translate.google.com",
